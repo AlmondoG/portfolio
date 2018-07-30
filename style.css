@@ -1,0 +1,10 @@
+.logo {
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+}
+
+header.masthead .intro-text .intro-heading {
+    margin-bottom: 25px;
+}
+
