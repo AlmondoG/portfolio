@@ -8,10 +8,11 @@ header.masthead .intro-text .intro-heading {
     margin-bottom: 25px;
 }
 
-/*#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {*/
-    /*opacity: 0;*/
-/*}*/
+#services span {
+    width: 70%;
+    height: 100%;
+}
 
-/*#portfolio .portfolio-item .portfolio-link .portfolio-hover {*/
-    /*display: none;*/
-/*}*/
+#portfolio a {
+    color: blue;
+}
