@@ -30,15 +30,13 @@ if(empty($message['message'])) {
     $output['messages'][] = 'missing message key';
 }
 
-//Sanitize subject
-$message['subject'] = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
-if(empty($message['subject'])) {
+
+//Sanitize phone number
+$message['phone'] = preg_replace('/[^0-9]/', '', $_POST['phone']);
+if(empty($message['phone'])) {
     $output['success'] = false;
     $output['messages'][] = 'missing subject key';
 }
-
-//Sanitize phone number
-$message['phone'] = preg_replace('/[^0-9]/', '', $_POST['phone_number']);
 
 if($output['success'] !== null) {
     http_response_code(400);
@@ -78,7 +76,7 @@ $mail->addReplyTo($message['email'], $message['name']);                         
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = $message['subject'];
+$mail->Subject = "You've been contacted by " . $message['name'];
 $mail->Body    = $message['message'];
 $mail->AltBody = $message['message'];
 
