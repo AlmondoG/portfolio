@@ -16,3 +16,7 @@ header.masthead .intro-text .intro-heading {
 #portfolio a {
     color: blue;
 }
+
+#about a {
+    color: white;
+}
