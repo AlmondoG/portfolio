@@ -8,6 +8,10 @@ header.masthead .intro-text .intro-heading {
     margin-bottom: 25px;
 }
 
+/*header.masthead .intro-text .intro-lead-in {*/
+    /*margin-bottom: 100px;*/
+/*}*/
+
 #services span {
     width: 70%;
     height: 100%;
@@ -20,3 +24,20 @@ header.masthead .intro-text .intro-heading {
 #about a {
     color: white;
 }
+
+.title-name-text, .title-position-text {
+    text-shadow: 0 0 25px black;
+}
+
+/*.down-arrow-button {*/
+    /*width: 75px;*/
+/*}*/
+
+/*.show-me-more-button {*/
+    /*padding: 0;*/
+/*}*/
+
+/*.show-me-more-button:hover img {*/
+    /*opacity: 0.8;*/
+    /*transition: .5s ease;*/
+/*}*/
