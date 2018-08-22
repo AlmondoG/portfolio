@@ -37,7 +37,18 @@ header.masthead .intro-text .intro-heading {
     padding: 0;
 }
 
+.show-me-more-button img {
+    -webkit-transform: translateZ(0);
+}
+
 .show-me-more-button:hover img {
     opacity: 0.8;
-    transition: .5s ease;
+    transition: opacity ease 0.5s;
+}
+
+@media (min-width: 992px) {
+    .masthead .container .intro-text {
+        padding-top: 250px;
+        padding-bottom: 200px;
+    }
 }
