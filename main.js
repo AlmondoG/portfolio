@@ -23,7 +23,7 @@ function contactInfoE() {
 }
 
 function contactInfoPN() {
-    var parts = ["66", "045", "3", "858", "9"];
+    var parts = ["66", "045", "3-", "858-", "9"];
     var number = parts[3] + parts[0] + parts[2] + parts[1] + parts[4];
     $(".el-telephono").text(number);
 }
